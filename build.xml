@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="ant_jacoco_study" default="add" basedir=".">
+    <target name="add">
+        <javac srcdir="./src" destdir="./bin" includeantruntime="false">
+        </javac>
+        <java classpath="./bin" classname="com.example.jacoco.Calculator">
+        </java>
+    </target>
+</project>
